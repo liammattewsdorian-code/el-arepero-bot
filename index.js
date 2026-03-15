@@ -6,7 +6,7 @@ const responses = require('./responses');
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-        headless: true
+        headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
