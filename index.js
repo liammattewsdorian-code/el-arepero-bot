@@ -7,7 +7,7 @@ const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
         headless: true,
-        executablePath: config.whatsapp.chromePath,
+        ,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
